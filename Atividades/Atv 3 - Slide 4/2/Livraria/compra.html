@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Comprar</title>
+	<link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+
+	<!--Logo-->
+	<h1>Compra</h1>
+
+	<!--action="pagina.php"-->
+	<form name="cadastro" method="post" action="#">
+		<p> Número do cumpom de desconto:
+			<input name="nome" type="text" size="25" maxlength="30" />
+		</p>
+		<p> Senha:
+			<input name="senha" type="password" size="25" maxlength="30" />
+		</p>
+
+		<select name="pagamento" size="1">
+			<option value="valor">Pix</option>
+			<option value="valor">Paypal</option>
+			<option value="valor">Cartão</option>
+		</select>
+
+		<h1>Para compras em cartão</h1>
+		<h6>Após selecionar a opão cartão digite os dados abaixo</h6>
+		<p> Número do cartão:
+			<input name="nome" type="text" size="25" maxlength="30" />
+		</p>
+		<p> Nome do cartão:
+			<input name="nome" type="text" size="25" maxlength="30" />
+		</p>
+		<p> Senha:
+			<input name="senha" type="password" size="25" maxlength="30" />
+		</p>
+		<p> CVV:
+			<input name="senha" type="text" size="25" maxlength="30" />
+		</p>
+		<p> Validade:
+			<input name="senha" type="text" size="25" maxlength="30" />
+		</p>
+		<p>
+			<input type="submit" value="Finalizar pedido" />
+			<input type="reset" value="Limpar" />
+		</p>
+	</form>
+	<a href="index.html">Voltar</a>
+	<hr>
+
+</body>
+
+<footer>
+	<adress>
+		Cabula nº 00<br>Salvador, BA, CEP:1111-1111.<br> Tel: 9999 - 9999
+	</adress>
+	<p>Livraria - Todos os direitos Reservados - 2022</p>
+</footer>
+
+</html>

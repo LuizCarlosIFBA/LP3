@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 2.37.2 (Applications 22.12.2) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="Modelo UML">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical_View" name="Logical View">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder">
+        <packagedElement xmi:type="uml:DataType" xmi:id="uTFSbORuoZmhB" name="char" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uT4CbIHgaO7ST" name="int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="um9iLBKWVsIBM" name="float" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ujhRwfUEgE26t" name="double" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u6Nx2dOa7c4ka" name="bool" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u0bAlo9pxSZso" name="string" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uxeLoq1aKSfDT" name="unsigned char" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uYZdOJM4iWDRY" name="signed char" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="unrmKr283G1Sh" name="unsigned int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="udR5YL7QNSr6L" name="signed int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="urj0Dq3tCfIyE" name="short int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u0DGVEAQZtSgO" name="unsigned short int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uKx14tjMbjk05" name="signed short int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uwVJ1dXlcQfEe" name="long int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u3XnwEFENFeaJ" name="signed long int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uuNFtDd187vDB" name="unsigned long int" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uqwAOShothbhT" name="long double" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="u8brO9V71ctjJ" name="wchar_t" isActive="false"/>
+      </uml:Package>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="96">
+          <diagram xmi.id="uojT2n0qCTciL" name="diagrama de classe" type="1" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="Ubuntu,10,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="100" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets/>
+            <messages/>
+            <associations/>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use_Case_View" name="Use Case View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component_View" name="Component View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment_View" name="Deployment View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity_Relationship_Model" name="Entity Relationship Model"/>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="uojT2n0qCTciL" documentation="" uniqueid="u8brO9V71ctjJ"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Entity_Relationship_Model" type="836" open="1"/>
+        <listitem id="Deployment_View" type="827" open="1"/>
+        <listitem id="Use_Case_View" type="802" open="1"/>
+        <listitem id="Component_View" type="821" open="1"/>
+        <listitem id="Logical_View" type="801" open="1">
+          <listitem id="uojT2n0qCTciL" type="807" label="diagrama de classe" open="0"/>
+          <listitem id="Datatypes" type="830" open="0"/>
+        </listitem>
+      </listitem>
+    </listview>
+    <codegeneration>
+      <codegenerator language="PHP5"/>
+    </codegeneration>
+  </xmi:Extension>
+</xmi:XMI>

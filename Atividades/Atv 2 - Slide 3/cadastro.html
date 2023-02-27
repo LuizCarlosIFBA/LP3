@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <!--Logo-->
+    <h1>Cadastro</h1>
+
+    <!--action="pagina.php"-->
+    <form name="cadastro" method="post" action="#">
+        <p> Name:
+            <input name="nome" type="text" size="25" maxlength="30" />
+        </p>
+        <p> Senha:
+            <input name="senha" type="password" size="25" maxlength="30" />
+        </p>
+
+
+        Receber novidades e ofertas por e-mail<input type="checkbox" name="novidades" value="valor do campo"
+            checked="caixa selecionada"></br>
+
+        <p> Sexo:
+            <INPUT TYPE="RADIO" NAME="sexo" VALUE="m">Masculino
+            <INPUT TYPE="RADIO" NAME="sexo" VALUE="f">Feminino
+            <INPUT TYPE="RADIO" NAME="sexo" VALUE="o">Outro
+        </p>
+
+        Como nos conheceu?</br><textarea name=“comentário” rows=5 cols=40></textarea><br>
+
+
+        <select name="pessoa" size="1">
+            <option value="valor">Pessoa física</option>
+            <option value="valor">Pessoa jurídica</option>
+        </select>
+        <p>
+            <input type="submit" value="Cadastrar" />
+            <input type="reset" value="Limpar" />
+        </p>
+    </form>
+    <a href="index.html">Voltar</a>
+    <hr>
+
+</body>
+
+<footer>
+    <adress>
+        Cabula nº 00<br>Salvador, BA, CEP:1111-1111.<br> Tel: 9999 - 9999
+    </adress>
+    <p>Livraria - Todos os direitos Reservados - 2022</p>
+</footer>
+
+</html>
