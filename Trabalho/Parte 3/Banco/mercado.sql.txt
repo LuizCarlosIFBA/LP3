@@ -1,0 +1,104 @@
+create database mercado;
+
+use mercado;
+
+-- Criação das tabelas
+CREATE TABLE Produtos (
+    idProduto INT PRIMARY KEY AUTO_INCREMENT,
+    preco DECIMAL(10,2) NOT NULL,
+    descricao VARCHAR(255) NOT NULL,
+    foto VARCHAR(255) NOT NULL,
+    promocao BOOLEAN NOT NULL,
+    categoria VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Usuario (
+    idUsuario INT PRIMARY KEY AUTO_INCREMENT,
+    usuario VARCHAR(255) NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    endereco VARCHAR(255) NOT NULL,
+    sexo VARCHAR(10) NOT NULL,
+    receber_email BOOLEAN NOT NULL
+);
+
+CREATE TABLE Setor (
+    idSetor INT PRIMARY KEY AUTO_INCREMENT,
+    codigoPedido VARCHAR(10) NOT NULL,
+    nomeCliente VARCHAR(255) NOT NULL,
+    valorTotal DECIMAL(10,2) NOT NULL,
+    enderecoEntrega VARCHAR(255) NOT NULL,
+    setorAtual VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Funcionario (
+    idFuncionario INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    endereco VARCHAR(255) NOT NULL,
+    sexo VARCHAR(10) NOT NULL,
+    receber_email BOOLEAN NOT NULL,
+    cargo VARCHAR(255) NOT NULL,
+    idSetor INT NOT NULL,
+    FOREIGN KEY (idSetor) REFERENCES Setor(idSetor)
+);
+
+
+
+CREATE TABLE Pedido (
+    idPedido INT PRIMARY KEY AUTO_INCREMENT,
+    codigo VARCHAR(10) NOT NULL,
+    descricao VARCHAR(255) NOT NULL,
+    valorTotal DECIMAL(10,2) NOT NULL,
+    nomeCliente VARCHAR(255) NOT NULL,
+    enderecoEntrega VARCHAR(255) NOT NULL,
+    metodoPagamento VARCHAR(255) NOT NULL,
+    reembolso BOOLEAN NOT NULL,
+    dataPedido DATE NOT NULL,
+    idUsuario INT NOT NULL,
+    FOREIGN KEY (idUsuario) REFERENCES Usuario(idUsuario),
+    idSetor INT NOT NULL,
+    FOREIGN KEY (idSetor) REFERENCES Setor(idSetor)
+);
+
+CREATE TABLE Carrinho (
+    idCarrinho INT PRIMARY KEY AUTO_INCREMENT,
+    produto VARCHAR(255) NOT NULL,
+    quantidade INT NOT NULL,
+    descricao VARCHAR(255) NOT NULL,
+    valor DECIMAL(10,2) NOT NULL,
+    idPedido INT NOT NULL,
+    FOREIGN KEY (idPedido) REFERENCES Pedido(idPedido),
+    idProduto INT NOT NULL,
+    FOREIGN KEY (idProduto) REFERENCES Produtos(idProduto)
+);
+
+CREATE TABLE Avaliar (
+    idAvaliar INT PRIMARY KEY AUTO_INCREMENT,
+    pontuacao INT NOT NULL,
+    comentario VARCHAR(255) NOT NULL,
+    idPedido INT NOT NULL,
+    FOREIGN KEY (idPedido) REFERENCES Pedido(idPedido),
+    idUsuario INT NOT NULL,
+    FOREIGN KEY (idUsuario) REFERENCES Usuario(idUsuario)
+);
+
+CREATE TABLE NotaFiscal (
+    idNotaFiscal INT PRIMARY KEY AUTO_INCREMENT,
+    nota VARCHAR(255) NOT NULL,
+    idPedido INT NOT NULL,
+    FOREIGN KEY (idPedido) REFERENCES Pedido(idPedido)
+);
+
+CREATE TABLE Rastreamento (
+    idRastreamento INT PRIMARY KEY AUTO_INCREMENT,
+    momentoEntrada DATETIME NOT NULL,
+    momentoSaida DATETIME NOT NULL,
+    idSetor INT NOT NULL,
+    FOREIGN KEY (idSetor) REFERENCES Setor(idSetor)
+);
