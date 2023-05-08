@@ -4,7 +4,7 @@
  * class Produto
  * 
  */
-class Produto
+class Produto extends ItemsPedido
 {
 
   /** Aggregations: */
@@ -17,7 +17,7 @@ class Produto
    * 
    * @access private
    */
-  var $nome;
+  var $cod_Referencia;
   /**
    * 
    * @access private

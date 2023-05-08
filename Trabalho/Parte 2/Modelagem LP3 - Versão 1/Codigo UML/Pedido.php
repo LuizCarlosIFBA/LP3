@@ -37,17 +37,7 @@ class Pedido
    * 
    * @access private
    */
-  var $valorTotal;
-  /**
-   * 
-   * @access private
-   */
-  var $enderecoEnvio;
-  /**
-   * 
-   * @access private
-   */
-  var $cep;
+  var $avaliacao;
 
   /**
    * 
@@ -74,6 +64,19 @@ class Pedido
   {
     
   } // end of member function addProduto
+
+  /**
+   * 
+   *
+   * @param string estrela 
+   * @param string comentario 
+   * @return string
+   * @access public
+   */
+  function avaliarProduto( $estrela,  $comentario)
+  {
+    
+  } // end of member function avaliarProduto
 
 
 

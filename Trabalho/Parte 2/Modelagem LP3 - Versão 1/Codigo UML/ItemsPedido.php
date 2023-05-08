@@ -4,7 +4,7 @@
  * class ItemsPedido
  * 
  */
-class ItemsPedido
+class ItemsPedido extends ProdutoPedido
 {
 
   /** Aggregations: */
@@ -33,11 +33,6 @@ class ItemsPedido
    * @access private
    */
   var $descricao;
-  /**
-   * 
-   * @access private
-   */
-  var $reembolso;
 
 
 

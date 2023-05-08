@@ -4,7 +4,7 @@
  * class Categoria
  * 
  */
-class Categoria
+class Categoria extends Produto
 {
 
   /** Aggregations: */

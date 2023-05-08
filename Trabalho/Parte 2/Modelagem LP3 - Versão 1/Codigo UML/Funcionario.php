@@ -10,7 +10,7 @@
   Inherit from it instead and create only objects from the derived classes
 *****************************************************************************/
 
-class Funcionario
+class Funcionario extends Pedido
 {
 
   /** Aggregations: */

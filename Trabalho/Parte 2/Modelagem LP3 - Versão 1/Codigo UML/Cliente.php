@@ -4,7 +4,7 @@
  * class Cliente
  * 
  */
-class Cliente
+class Cliente extends Pedido
 {
 
   /** Aggregations: */
