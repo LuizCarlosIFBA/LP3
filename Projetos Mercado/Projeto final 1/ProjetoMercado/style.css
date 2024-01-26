@@ -1,0 +1,838 @@
+/*Barra de progressão circular usado na compra*/
+
+/*Círculo cinza*/
+.circle-wrap {
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  background: lightgray;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+
+/*Define o círculo que acompanhará o cinza*/
+.circle-wrap .circle .mask, .circle-wrap .circle .fill {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/*Metade do círculo ciano da barra de progressão*/
+.circle-wrap .circle .mask {
+  clip: rect(0px, 80px, 80px, 40px);
+}
+
+/*Círculo branco interno com porcentagem*/
+.circle-wrap .inside-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: white;
+  line-height: 60px;
+  text-align: center;
+  margin-top: 9px;
+  margin-left: 9px;
+  color: darkcyan;
+  position: absolute;
+  z-index: 100;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/*Metade do círculo ciano da barra de progressão*/
+.mask .fill {
+  clip: rect(0px, 40px, 80px, 0px);
+  background-color: darkcyan;
+}
+
+/*---------------------------------------------------------------*/
+
+button.btn-info, button.btn-info:visited, button.btn-info:active{
+  background-color: darkcyan;
+  border-color: darkcyan;  
+  font-weight: bold;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+button.btn-info:hover{
+  background-color: darkcyan;
+  border-color: darkcyan;  
+  opacity: 1;
+}
+
+button.btn-info.lista, button.btn-info:visited.lista, button.btn-info:active.lista, button.btn-info:hover.lista{
+  font-size: 14px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+button.btn-info.produto, button.btn-info:visited.produto, button.btn-info:active.produto, button.btn-info:hover.produto{
+  font-size: 20px;
+  padding: 15px;
+  padding-left: 35px;
+  padding-right: 35px; 
+}
+
+button.btn-info.visualizar, button.btn-info:visited.visualizar {
+  border: 2px solid darkcyan;
+  font-size: 14px;
+  white-space: nowrap;
+
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  opacity: 0.6;
+}    
+button.btn-info:hover.visualizar, button.btn-info:active.visualizar {
+  opacity: 1;
+  border: 2px solid darkcyan;  
+} 
+
+button.btn-info.search, button.btn-info:visited.search, button.btn-info:active.search, button.btn-info:hover.search{
+  opacity: 1;
+}
+
+
+button.btn-danger, button.btn-danger:visited, button.btn-danger:hover, button.btn-danger:active{
+  background-color: #DF0101;
+  border-color: #DF0101;  
+  font-weight: bold;
+}
+
+/*---------------------------------------------------------------*/
+
+.breadcrumb{
+  border: 2px solid darkcyan;
+  background-color: #FAFAFA;
+}
+
+.breadcrumb > .active > a {
+  text-decoration: underline;
+  text-decoration-style: double;
+  font-weight: bold;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Troca a cor da paginação*/
+.pagination > li > a {
+  background-color: white;
+  color: darkcyan;
+}
+
+/*Troca a cor da paginação ativa*/
+.pagination > .active > a {
+  color: white;
+  background-color: darkcyan !Important;
+  border: solid 1px darkcyan !Important;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Barra de navegação*/
+
+nav.navbar {
+  border-radius: 0px;  
+  background-color:#DF0101;
+  color: white;  
+}
+
+/*Rodapé*/
+
+footer{
+  background: #DF0101;
+  padding: 25px;
+  color: white;
+}
+
+/*---------------------------------------------------------------*/
+                            /*Imagens*/
+/*---------------------------------------------------------------*/
+
+.imagem1{
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.imagem2{
+  width: 35%;
+  height: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imagem3{
+  width: 300px;
+  height: 320px;
+}
+
+.imagem4{
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+}
+
+/*Carrinho*/
+.imagem5{
+  width: 80px;
+  height: 80px;
+}
+
+/*---------------------------------------------------------------*/
+                          /*Textos e Formatações*/
+/*---------------------------------------------------------------*/
+
+/*Página inicial*/
+
+.f1{
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.f2{
+  color: darkcyan;
+}
+
+/*Preços em destaque da página inicial*/
+
+.f3{
+  color: #DF0101;
+}
+
+/*Tabela de categorias da página de produtos*/
+
+.f4 {
+  color: darkcyan;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  padding-top: 30px;
+}
+
+/*Tabela de categorias da página de produtos*/
+
+.f5 {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 30px;
+  border: 2px solid darkcyan;
+}
+
+/*Nomes produtos da página de produtos*/
+
+.f6{
+  text-align: left;
+  margin-top: 15%;
+}
+
+/*Página de visualização de produto*/
+
+.f7{
+  margin-top: 10px;
+  font-variant: small-caps;
+}
+.f7b{
+  font-variant: small-caps;
+}
+
+.f8{
+  color: gray;
+}
+
+/*Contorno do produto*/
+
+.f9{/*Não vale a pena*/
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  padding:10px;
+  margin-bottom: 30px;
+}
+
+/*Nome do produto*/
+
+.f10{
+  font-size: 30px;
+}
+
+.f11{
+  font-size: 18px;
+  font-style: italic;
+}
+
+.f12{
+  font-size: 25px;
+}
+.f12b{
+  font-size: 24px;
+}
+
+.f13{
+  font-weight: bold;
+}
+
+.f14{
+  text-decoration: underline;
+}
+
+.f15{
+  font-size: 15px;
+  text-align: center;
+}
+
+.f16{
+  font-size: 20px;
+}
+
+.f17{
+  font-size: 40px;
+  
+  border: 1px solid darkcyan;
+  border-radius: 100%;
+  
+  width: 100px;
+  height: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.f18{
+  padding: 20px;
+  margin-left: 10px;
+}
+.f18b{
+  padding: 20px;
+}
+
+.f19{
+  opacity: 0.6;
+  color: lightgray;
+}
+
+/*Como fazer isso funcionar?*/
+.f19:active{
+  opacity: 1;
+  color: darkcyan
+}
+
+.f20{
+  margin-top: 10px;
+}
+
+.f21{
+  margin-right: 293px;  
+  margin-left: 240px;  
+}
+
+.f22{
+  background-color: #FAFAFA; 
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+}
+
+.f23{
+  text-align: right;
+}
+.f23b{
+  text-align: center;
+}
+
+.f24{
+  font-size: 16px;
+}
+.f24{
+  font-size: 14px;
+}
+
+/*Botão de remover da página do Carrinho*/
+.f25a{
+  background-color: #FAFAFA; 
+  border: 1px solid #DF0101;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.f25b{
+  background-color: #FAFAFA; 
+  border: 0px;
+  padding: 5px;
+}
+
+.f26{
+  white-space: nowrap;
+}
+
+.f27{
+  border-top: 1px solid lightgray;
+}
+
+.f28{
+  color: #FACC2E;
+}
+
+.f29{
+  padding-top: 10px;
+}
+
+.f30{
+  margin-top: 30px;
+}
+
+.f30b{
+  margin-top: 17px;
+}
+
+.f30c{
+  margin-top: 23px;
+}
+
+/*Propaganda da página inical*/
+.f19{
+  opacity: 0.8;
+}
+
+.f19:active{
+  opacity: 1;
+}
+
+input.estoque{
+  background-color: #FAFAFA;
+  border: none;
+  text-align: center;
+  outline: none;
+  text-decoration: underline;
+}
+
+input.endereco{
+  background-color: #FAFAFA;
+  color: gray;
+  
+  border: none;
+  outline: none;
+}
+
+input.pequeno{
+  background-color: #FAFAFA;
+  color: gray;
+  border: none;
+  outline: none;
+  width: 13%;
+}
+
+input.geral{
+  background-color: #FAFAFA;
+  color: gray;
+  border: none;
+  outline: none;
+}
+
+
+button.btn.seta {
+  background-color: #FAFAFA;
+  padding: 1px;
+}
+
+/*---------------------------------------------------------------*/
+                            /*Cores*/
+/*---------------------------------------------------------------*/
+
+.darkcyan{
+  color: darkcyan;
+}
+
+.red{
+  color: #DF0101;
+}
+
+.gray{
+  color: gray;
+}
+
+/*---------------------------------------------------------------*/
+                            /*Links*/
+/*---------------------------------------------------------------*/
+
+/*Login, etc*/
+
+a.l1:link, a.l1:visited{
+    color: white;  
+}
+
+a.l1:hover, a.l1:active{
+  color: black;
+  background-color: white;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Mercado*/
+
+a.l2:link, a.l2:visited{
+    color: white;  
+}
+
+/*---------------------------------------------------------------*/
+
+/*Formatação breadcrumb da página de produtos*/
+
+a.l3:link, a.l3:visited{
+    color: darkcyan;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Botão da página de lista de produtos*/
+
+a.l4:link, a.l4:visited{
+    color: darkcyan;
+    background-color: yellow;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+  
+    font-weight: bold;
+    font-size: 14px;
+
+    padding: 6px;
+    margin-top: 11%;
+  
+    opacity: 0.9;
+    transition: 0.3s;
+  
+    display: inline-block;
+    cursor: pointer;
+}
+
+a.l4:hover, a.l4:active{
+    color: darkblue;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Botão página inicial*/
+a.l5:link, a.l5:visited{
+  color: white;
+  background-color: darkcyan;
+  border: 2px solid darkcyan;
+  border-radius: 10px;
+
+  font-weight: bold;
+  font-size: 14px;
+  
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  margin: 4px 2px;
+  margin-top: 10px;
+  
+  display: inline-block;
+  cursor: pointer;
+}
+
+.l5:hover{
+    color: darkblue;
+    text-decoration: none;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Botão da página do produto*/
+
+a.l6:link, a.l6:visited{
+    color: white;
+    background-color: darkcyan;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+
+    font-weight: bold;
+    font-size: 25px;
+  
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+  
+    opacity: 0.6;
+    transition: 0.3s;
+  
+    display: inline-block;
+    cursor: pointer;
+}
+
+a.l6:hover, a.l6:active{
+    color: darkblue;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Botão menor da página de produto*/
+
+a.l7:link, a.l7:visited{
+    color: white;
+    background-color: darkcyan;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+
+    font-weight: bold;
+    font-size: 16px;
+
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  
+    opacity: 0.6;
+    transition: 0.3s;
+  
+    display: inline-block;
+    cursor: pointer;
+}
+
+a.l7:hover, a.l7:active{
+    color: darkblue;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/*---------------------------------------------------------------*/   
+
+/*Produtos da página inicial*/
+.l8{
+  border: 1px solid #E6E6E6;
+  border-radius: 40px;
+  background-color: #FAFAFA;
+  
+  text-align: center;
+  
+  padding: 10px;
+  padding-bottom: 20px;
+  
+  margin: 20px;
+  
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.l8:hover, .l8:active{
+  opacity: 1;
+  border: 1px solid lightgray
+}
+
+/*---------------------------------------------------------------*/
+
+/*Botão da página do Carrinho*/
+
+a.l9:link, a.l9:visited{
+    color: white;
+    background-color: darkcyan;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    
+    padding: 10px;
+    padding-right: 20px;
+  
+    opacity: 0.6;
+    transition: 0.3s;
+  
+    display: inline-block;
+    cursor: pointer;
+}
+
+a.l9:hover, a.l9:active{
+    color: darkblue;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/*---------------------------------------------------------------*/ 
+
+/*Segundo botão da página do Carrinho*/
+a.l10:link, a.l10:visited{
+    color: darkcyan;
+    background-color: white;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    
+    padding: 10px;
+    padding-right: 10px;
+  
+    opacity: 0.6;
+    transition: 0.3s;
+  
+    display: inline-block;
+    cursor: pointer;
+}
+
+a.l10:hover, a.l10:active{
+    color: darkblue;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Botão da página da Confirmação*/
+
+a.l11:link, a.l11:visited{
+    color: white;
+    background-color: darkcyan;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 30px;
+  
+    opacity: 0.6;
+    transition: 0.3s;
+  
+    display: inline-block;
+    cursor: pointer;
+}
+
+a.l11:hover, a.l11:active{
+    color: darkblue;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/*Pequenas alterações*/
+a.l11b:link, a.l11b:visited{
+    color: white;
+    background-color: darkcyan;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    opacity: 0.6;
+    transition: 0.3s;
+  
+    display: inline-block;
+    cursor: pointer;
+}
+
+a.l11b:hover, a.l11b:active{
+    color: darkblue;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/*---------------------------------------------------------------*/ 
+
+a.l12:link, a.l12:visited{
+    color: darkcyan;
+    background-color: #FAFAFA;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+
+    font-weight: bold;
+    white-space: nowrap;
+    
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/*---------------------------------------------------------------*/ 
+
+a.l13:link, a.l13:visited{
+    color:  #DF0101;
+    background-color: white;
+    border: 2px solid #DF0101;
+    border-radius: 10px;
+
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    opacity: 0.6;
+    transition: 0.3s;
+  
+    display: inline-block;
+    cursor: pointer;
+}
+
+a.l13:hover, a.l13:active{
+    color: darkred;
+    text-decoration: none;
+    opacity: 1;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Pequenas alterações*/
+a.l14:link, a.l14:visited{
+    color: white;
+    background-color: darkcyan;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+    
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  
+    opacity: 0.6;
+    transition: 0.3s;
+  
+    display: inline-block;
+    cursor: pointer;
+}
+
+a.l14:hover, a.l14:active{
+    color: darkblue;
+    text-decoration: none;
+    opacity: 1;
+}
